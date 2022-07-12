@@ -15,7 +15,7 @@ public class Cadastro extends AppCompatActivity {
     }
 
     public void criarConta(View view) {
-        Intent back = new Intent(getApplicationContext(), Login.class);
+        Intent back = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(back);
     }
 }

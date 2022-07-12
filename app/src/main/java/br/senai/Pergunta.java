@@ -15,7 +15,7 @@ public class Pergunta extends AppCompatActivity {
     }
 
     public void voltar(View view) {
-        Intent back = new Intent(getApplicationContext(), MainActivity.class);
+        Intent back = new Intent(getApplicationContext(), Jogo.class);
         startActivity(back);
     }
 

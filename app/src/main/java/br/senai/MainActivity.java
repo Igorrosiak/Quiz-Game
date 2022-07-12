@@ -14,8 +14,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void redirecionar(View view){
-        Intent back = new Intent(getApplicationContext(), Pergunta.class);
+    public void cadastro(View view){
+        Intent back = new Intent(getApplicationContext(), Cadastro.class);
+        startActivity(back);
+    }
+
+    public void logar(View view) {
+        Intent back = new Intent(getApplicationContext(), Jogo.class);
         startActivity(back);
     }
 }

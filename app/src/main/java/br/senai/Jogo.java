@@ -6,21 +6,21 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Login extends AppCompatActivity {
+public class Jogo extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_jogo);
     }
 
-    public void cadastro(View view){
-        Intent back = new Intent(getApplicationContext(), Cadastro.class);
+    public void redirecionar(View view){
+        Intent back = new Intent(getApplicationContext(), Pergunta.class);
         startActivity(back);
     }
 
-    public void logar(View view) {
-        Intent back = new Intent(getApplicationContext(), MainActivity.class);
+    public void estudar(View view){
+        Intent back = new Intent(getApplicationContext(), Conteudo.class);
         startActivity(back);
     }
 }
