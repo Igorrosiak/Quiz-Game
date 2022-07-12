@@ -7,17 +7,6 @@
     android:background="#E9000000"
     tools:context=".Login">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="168dp"
-        android:layout_height="144dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/LogoQuizGame" />
-
     <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="277dp"
@@ -46,7 +35,6 @@
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:text="Email"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
@@ -54,7 +42,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        tools:layout_editor_absoluteY="208dp" />
 
     <TextView
         android:id="@+id/textView21"
@@ -76,6 +64,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="28dp"
         android:background="#41000000"
+        android:onClick="logar"
         android:paddingTop="11sp"
         android:text="Fazer Login"
         android:textAlignment="center"
@@ -92,6 +81,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
         android:layout_marginTop="28dp"
+        android:onClick="cadastro"
         android:text="Crie sua conta"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
@@ -109,5 +99,13 @@
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/textView24"
         app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="199dp"
+        android:layout_height="154dp"
+        app:srcCompat="@drawable/logo_quiz_game"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="25dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
